@@ -1,0 +1,308 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0076953B1A71492A00B14B26 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 0076953A1A71492A00B14B26 /* main.c */; };
+		0076954E1A71495500B14B26 /* libwebp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0076954B1A71495500B14B26 /* libwebp.a */; };
+		0076954F1A71495500B14B26 /* libwebpdemux.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0076954C1A71495500B14B26 /* libwebpdemux.a */; };
+		007695501A71495500B14B26 /* libwebpmux.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0076954D1A71495500B14B26 /* libwebpmux.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		007695351A71492A00B14B26 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		007695371A71492A00B14B26 /* iwebp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = iwebp; sourceTree = BUILT_PRODUCTS_DIR; };
+		0076953A1A71492A00B14B26 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		007695441A71495500B14B26 /* decode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = decode.h; sourceTree = "<group>"; };
+		007695451A71495500B14B26 /* demux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = demux.h; sourceTree = "<group>"; };
+		007695461A71495500B14B26 /* encode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = encode.h; sourceTree = "<group>"; };
+		007695471A71495500B14B26 /* mux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mux.h; sourceTree = "<group>"; };
+		007695481A71495500B14B26 /* mux_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mux_types.h; sourceTree = "<group>"; };
+		007695491A71495500B14B26 /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
+		0076954B1A71495500B14B26 /* libwebp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libwebp.a; sourceTree = "<group>"; };
+		0076954C1A71495500B14B26 /* libwebpdemux.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libwebpdemux.a; sourceTree = "<group>"; };
+		0076954D1A71495500B14B26 /* libwebpmux.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libwebpmux.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		007695341A71492A00B14B26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				007695501A71495500B14B26 /* libwebpmux.a in Frameworks */,
+				0076954E1A71495500B14B26 /* libwebp.a in Frameworks */,
+				0076954F1A71495500B14B26 /* libwebpdemux.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0076952E1A71492A00B14B26 = {
+			isa = PBXGroup;
+			children = (
+				007695391A71492A00B14B26 /* iwebp */,
+				007695381A71492A00B14B26 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		007695381A71492A00B14B26 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				007695371A71492A00B14B26 /* iwebp */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		007695391A71492A00B14B26 /* iwebp */ = {
+			isa = PBXGroup;
+			children = (
+				0076953A1A71492A00B14B26 /* main.c */,
+				007695411A71495500B14B26 /* libwebp */,
+			);
+			path = iwebp;
+			sourceTree = "<group>";
+		};
+		007695411A71495500B14B26 /* libwebp */ = {
+			isa = PBXGroup;
+			children = (
+				007695421A71495500B14B26 /* include */,
+				0076954A1A71495500B14B26 /* lib */,
+			);
+			path = libwebp;
+			sourceTree = "<group>";
+		};
+		007695421A71495500B14B26 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				007695431A71495500B14B26 /* webp */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		007695431A71495500B14B26 /* webp */ = {
+			isa = PBXGroup;
+			children = (
+				007695441A71495500B14B26 /* decode.h */,
+				007695451A71495500B14B26 /* demux.h */,
+				007695461A71495500B14B26 /* encode.h */,
+				007695471A71495500B14B26 /* mux.h */,
+				007695481A71495500B14B26 /* mux_types.h */,
+				007695491A71495500B14B26 /* types.h */,
+			);
+			path = webp;
+			sourceTree = "<group>";
+		};
+		0076954A1A71495500B14B26 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				0076954B1A71495500B14B26 /* libwebp.a */,
+				0076954C1A71495500B14B26 /* libwebpdemux.a */,
+				0076954D1A71495500B14B26 /* libwebpmux.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		007695361A71492A00B14B26 /* iwebp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0076953E1A71492A00B14B26 /* Build configuration list for PBXNativeTarget "iwebp" */;
+			buildPhases = (
+				007695331A71492A00B14B26 /* Sources */,
+				007695341A71492A00B14B26 /* Frameworks */,
+				007695351A71492A00B14B26 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iwebp;
+			productName = iwebp;
+			productReference = 007695371A71492A00B14B26 /* iwebp */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0076952F1A71492A00B14B26 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Takeru Chuganji";
+				TargetAttributes = {
+					007695361A71492A00B14B26 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 007695321A71492A00B14B26 /* Build configuration list for PBXProject "iwebp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0076952E1A71492A00B14B26;
+			productRefGroup = 007695381A71492A00B14B26 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				007695361A71492A00B14B26 /* iwebp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		007695331A71492A00B14B26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0076953B1A71492A00B14B26 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0076953C1A71492A00B14B26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iwebp/libwebp/include",
+				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/iwebp/libwebp/lib";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0076953D1A71492A00B14B26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iwebp/libwebp/include",
+				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/iwebp/libwebp/lib";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		0076953F1A71492A00B14B26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		007695401A71492A00B14B26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		007695321A71492A00B14B26 /* Build configuration list for PBXProject "iwebp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0076953C1A71492A00B14B26 /* Debug */,
+				0076953D1A71492A00B14B26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0076953E1A71492A00B14B26 /* Build configuration list for PBXNativeTarget "iwebp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0076953F1A71492A00B14B26 /* Debug */,
+				007695401A71492A00B14B26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0076952F1A71492A00B14B26 /* Project object */;
+}
