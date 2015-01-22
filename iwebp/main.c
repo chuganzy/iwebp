@@ -44,12 +44,14 @@ static int show_webp_info(const char *const file_name) {
     const uint8_t *data;
     size_t size;
     if (read_webp_file(file_name, &data, &size) != 0) {
-        printf("IO Error.");
+        free((void *) data);
+        printf("IO Error.\n");
         return -1;
     }
     WebPBitstreamFeatures features;
     if (WebPGetFeatures(data, size, &features) != VP8_STATUS_OK) {
-        printf("WebP Error.");
+        free((void *) data);
+        printf("WebP Get Features Error.\n");
         return -1;
     }
     printf("width: %d\n", features.width);
