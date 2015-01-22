@@ -10,7 +10,7 @@
 #include <stdlib.h>
 #include <webp/decode.h>
 
-static void show_help() {
+static void show_help(void) {
     printf("Usage: iwebp [WEBP_FILE]\n");
 }
 
