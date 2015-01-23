@@ -7,6 +7,7 @@
 //
 
 #include <stdio.h>
+#include <sys/stat.h>
 #include <stdlib.h>
 #include <webp/decode.h>
 
@@ -51,7 +52,7 @@ static int show_webp_info(const char *const file_name) {
     WebPBitstreamFeatures features;
     if (WebPGetFeatures(data, size, &features) != VP8_STATUS_OK) {
         free((void *) data);
-        printf("WebP Get Features Error.\n");
+        printf("WebP Error.\n");
         return -1;
     }
     printf("width: %d\n", features.width);
@@ -83,5 +84,11 @@ int main(int argc, const char *argv[]) {
         return 0;
     }
     const char *file_name = argv[1];
+    struct stat st;
+    if (stat(file_name, &st) != 0) {
+        printf("File not exists.\n");
+        show_help();
+        return -1;
+    }
     return show_webp_info(file_name);
 }
